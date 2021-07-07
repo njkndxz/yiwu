@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/tv_personal_center1"
+        android:text="个人中心"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorBrown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/colorBlue"/>
+
+    <Button
+        android:id="@+id/btn_user_info"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="个人信息"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_student_number"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGreen"
+        android:layout_alignLeft="@+id/btn_my_goods"
+        android:layout_alignStart="@+id/btn_my_goods" />
+
+    <ImageView
+        android:id="@+id/iv_user_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite"
+        android:src="@drawable/icon_user_photo"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/tv_personal_center1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/iv_user_info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_user_info"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/btn_user_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/iv_my_goods"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_my_goods"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/btn_my_goods"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/iv_my_collection"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_my_collection"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/btn_my_collection"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/iv_modify_password"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_modify_pwd"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/btn_modify_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/iv_about_app"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_about_us"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/btn_about_app"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/iv_logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_logout"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/btn_logout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_student_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:layout_below="@+id/iv_user_photo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_my_goods"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="我的发布"
+        android:textSize="20sp"
+        android:background="@color/colorGreen"
+        android:layout_below="@+id/btn_user_info"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btn_my_collection"
+        android:layout_alignStart="@+id/btn_my_collection" />
+
+    <Button
+        android:id="@+id/btn_my_collection"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="我的收藏"
+        android:textSize="20sp"
+        android:background="@color/colorGreen"
+        android:layout_below="@+id/btn_my_goods"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btn_modify_password"
+        android:layout_alignStart="@+id/btn_modify_password" />
+
+    <Button
+        android:id="@+id/btn_modify_password"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="修改密码"
+        android:textSize="20sp"
+        android:background="@color/colorGreen"
+        android:layout_below="@+id/btn_my_collection"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_about_app"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="关于系统"
+        android:textSize="20sp"
+        android:background="@color/colorGreen"
+        android:layout_below="@+id/btn_modify_password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="退出登录"
+        android:textSize="20sp"
+        android:background="@color/colorGreen"
+        android:layout_below="@+id/btn_about_app"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="返回"
+        android:textSize="20sp"
+        android:background="@color/colorBlue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+</RelativeLayout>

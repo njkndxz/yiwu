@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_publish_info"
+        android:text="发布商品"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorBrown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/colorBlue"/>
+    <TextView
+        android:id="@+id/tv_student_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_publish_info"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/tv_add_photo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="添加照片"
+        android:textSize="22sp"
+        android:layout_below="@+id/tv_student_id"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="55dp"
+        />
+
+    <Spinner
+        android:id="@+id/spn_type"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="105dp"
+        android:entries="@array/product_type"
+        android:layout_below="@+id/et_title" />
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_description"
+        android:text="发布"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_publish"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"/>
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_description"
+        android:text="返回"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_cancel"
+        android:layout_marginStart="205dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="类别"
+        android:textSize="22sp"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignLeft="@+id/tv_price"
+        android:layout_alignStart="@+id/tv_price" />
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlue"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:hint="请输入价格"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_type"
+        android:layout_alignRight="@+id/et_title"
+        android:layout_alignEnd="@+id/et_title"
+        android:layout_alignLeft="@+id/et_title"
+        android:layout_alignStart="@+id/et_title" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="价格"
+        android:textSize="22sp"
+        android:layout_below="@+id/tv_type"
+        android:layout_alignLeft="@+id/tv_add_photo"
+        android:layout_alignStart="@+id/tv_add_photo" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBlue"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:hint="请输入联系方式"
+        android:textSize="18sp"
+        android:layout_below="@+id/et_price"
+        android:layout_alignRight="@+id/et_price"
+        android:layout_alignEnd="@+id/et_price"
+        android:layout_alignLeft="@+id/et_price"
+        android:layout_alignStart="@+id/et_price" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="联系方式"
+        android:textSize="22sp"
+        android:layout_alignTop="@+id/et_phone"
+        android:layout_alignLeft="@+id/tv_add_photo"
+        android:layout_alignStart="@+id/tv_add_photo"
+        android:layout_alignRight="@+id/tv_add_photo"
+        android:layout_alignEnd="@+id/tv_add_photo" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlue"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:hint="请输入简要概述"
+        android:layout_alignBottom="@+id/tv_description"
+        android:layout_alignTop="@+id/tv_description"
+        android:layout_alignRight="@+id/btn_back"
+        android:layout_alignEnd="@+id/btn_back"
+        android:layout_alignLeft="@+id/et_phone"
+        android:layout_alignStart="@+id/et_phone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="标题"
+        android:textSize="22sp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/iv_photo"
+        android:layout_alignLeft="@+id/tv_type"
+        android:layout_alignStart="@+id/tv_type" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlue"
+        android:maxLines="1"
+        android:hint="请输入标题"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/tv_title"
+        android:layout_toRightOf="@+id/tv_add_photo"
+        android:layout_alignRight="@+id/btn_back"
+        android:layout_alignEnd="@+id/btn_back" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="描述"
+        android:textSize="22sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tv_phone"
+        android:layout_alignLeft="@+id/tv_phone"
+        android:layout_alignStart="@+id/tv_phone" />
+
+    <ImageButton
+        android:id="@+id/iv_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icon_take_photo"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/tv_student_id"
+        android:layout_toRightOf="@+id/tv_add_photo"
+        android:layout_toEndOf="@+id/tv_add_photo"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+</RelativeLayout>
